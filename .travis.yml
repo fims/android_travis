@@ -9,6 +9,7 @@ android:
     # Support library
     - extra-android-support
     - extra-android-m2repository
+    - extra-google-m2repository
   
 #before_install:
 #    - chmod +x gradlew
