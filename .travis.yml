@@ -22,7 +22,7 @@ before_script:
 #  - adb shell input keyevent 82 &
 
 script: 
- - chmod +x ./gradlew
- - chmod +x gradlew
+# - chmod +x ./gradlew
+# - chmod +x gradlew
  - cd MyApplication/  
  - ./gradlew tasks
