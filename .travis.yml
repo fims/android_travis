@@ -5,6 +5,6 @@ android:
     - build-tools-23.0.1
     - android-23
 
-script: 
- - cd MyApplication/  
- - ./gradlew build connectedCheck
+#script: 
+# - cd MyApplication/  
+# - ./gradlew build connectedCheck
