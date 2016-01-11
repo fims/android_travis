@@ -1,14 +1,21 @@
+
 language: android
 android:
   components:
-    - platform-tools
-    - build-tools-23.0.1
-    - android-23
+    - build-tools-18.1.0
 
+    # The SDK version used to compile your project
+    - android-19
+
+
+# Emulator Management: Create, Start and Wait
 before_script:
+  - echo no | android create avd --force -n test -t android-19 --abi armeabi-v7a
+  - emulator -avd test -no-skin -no-audio -no-window &
+  - android-wait-for-emulator
+  - adb shell input keyevent 82 &
+
+
+script: 
  - cd MyApplication/  
-
-
-#script: 
-# - cd MyApplication/  
-# - ./gradlew build connectedCheck
+ - ./gradlew build connectedCheck
