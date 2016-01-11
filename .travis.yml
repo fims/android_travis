@@ -17,5 +17,5 @@ before_script:
   - adb shell input keyevent 82 &
 
 script: 
- - cd MAGPIE/  
+ - cd MyApplication/  
  - ./gradlew build connectedCheck
