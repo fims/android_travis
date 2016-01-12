@@ -25,7 +25,7 @@ android:
 #before_script:
 #  - cd MyApplication/
 
-#script: 
+script: 
  - cd MyApplication/  
  - chmod +x ./gradlew
  - chmod +x gradlew
