@@ -26,4 +26,4 @@ script:
 # - chmod +x ./gradlew
 # - chmod +x gradlew
  - cd MyApplication/  
- - ./gradlew build
+ - ./gradlew -version
