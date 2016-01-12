@@ -13,7 +13,7 @@ android:
     - extra-google-m2repository
   
 #before_install:
-    - chmod +x gradlew
+#    - chmod +x gradlew
 #
 # Emulator Management: Create, Start and Wait
 #before_script:
@@ -22,8 +22,11 @@ android:
 #  - android-wait-for-emulator
 #  - adb shell input keyevent 82 &
 
-script: 
+before_script:
+  - cd MyApplication/
+
+#script: 
 # - chmod +x ./gradlew
 # - chmod +x gradlew
- - cd MyApplication/  
- - ./gradlew -version
+# - cd MyApplication/  
+# - ./gradlew -version
