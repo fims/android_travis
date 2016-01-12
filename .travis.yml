@@ -22,11 +22,11 @@ android:
 #  - android-wait-for-emulator
 #  - adb shell input keyevent 82 &
 
-before_script:
-  - cd MyApplication/
+#before_script:
+#  - cd MyApplication/
 
 #script: 
-# - chmod +x ./gradlew
-# - chmod +x gradlew
-# - cd MyApplication/  
-# - ./gradlew -version
+ - cd MyApplication/  
+ - chmod +x ./gradlew
+ - chmod +x gradlew
+ - ./gradlew build connectedCheck
